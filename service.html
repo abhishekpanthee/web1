@@ -211,8 +211,35 @@
       <div class="col-md-4 col-sm-6 mb-50">
         <img src="images/product/btc.png" alt="product-img" class="rounded w-100 img-fluid"></a>
       </div>
+      <div class="col-md-4 col-sm-6 mb-50">
+        <div id="paypal-button-container-P-5H751130N0293062GMX227WA"></div>
+        <br>
+        <script src="https://www.paypal.com/sdk/js?client-id=AbFxZfJvZKl2O6KHn6zenQ7HVCYci2Sa8Sy3TFxwVzmEIRvoXAKHsuMdLKm6zx5pq7UMEI0WOKIzL5rC&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'pill',
+                  color: 'black',
+                  layout: 'vertical',
+                  label: 'paypal'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  /* Creates the subscription */
+                  plan_id: 'P-5H751130N0293062GMX227WA'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+              }
+          }).render('#paypal-button-container-P-5H751130N0293062GMX227WA'); // Renders the PayPal button
+        </script>
+      </div>
     </div>
   </div>
+
+
+  
 <!-- /pricing -->
 
 <!-- footer -->
@@ -221,19 +248,19 @@
     <div class="row">
       <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
         <!-- logo -->
-        <a href="index.html">
+        <a href="https://abhishekpanthee,info.np">
           <img class="img-fluid" src="images/abc2.gif" alt="logo">
         </a>
       </div>
       <!-- footer menu -->
       <nav class="col-lg-8 align-self-center mb-5">
         <ul class="list-inline text-lg-right text-center footer-menu">
-          <li class="list-inline-item active"><a href="index.html">Home</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
-          <li class="list-inline-item"><a href="about.html">About</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
-          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+          <li class="list-inline-item active"><a href="https://abhishekpanthee,info.np">Home</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="https://abhishekpanthee,info.np#feature">Feature</a></li>
+          <li class="list-inline-item"><a href="https://abhishekpanthee,info.np/about">About</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="https://abhishekpanthee,info.np#team">Team</a></li>
+          <li class="list-inline-item"><a class="page-scroll" href="https://abhishekpanthee,info.np#pricing">Pricing</a></li>
+          <li class="list-inline-item"><a href="https://abhishekpanthee,info.np/contact">Contact</a></li>
         </ul>
       </nav>
       <!-- footer social icon -->
