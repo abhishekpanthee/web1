@@ -32,7 +32,7 @@ try {
 
     //Recipients
     $mail->setFrom('abhishekpanthee5@gmail.com', 'Contact-Form');
-    $mail->addAddress('info@abhishekpanthee.com.np', 'Owner');     //Add a recipient
+    $mail->addAddress('abhishekpanthee5@gmail.com', 'Owner');     //Add a recipient
    
 
    //Optional name
