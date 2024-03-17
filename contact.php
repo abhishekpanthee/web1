@@ -11,15 +11,16 @@ if(isset($_POST['send']))
     $email = $_POST['email'];
     $msg = $_POST['message'];
 }
-
+$fe_value = $name . " " . $email . " " . $msg;
+echo_r $fe_value;
 //Load Composer's autoloader
 require 'PHPMailer/Exception.php';
 require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
-
+echo "20";
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
-
+echo "23";
 try {
     //Server settings                     //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
